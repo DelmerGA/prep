@@ -17,9 +17,7 @@ Record.makeKey = function(){
   var keys = this.recordKeys(), name = this.name;
 
   if(keys) {
-    console.log("WWhat???", keys)
     var length = keys.length || 1, last = length - 1;
-    console.log(last,keys.length)
     newKey = keys[last] + 1;
   } else {
     newKey = 1;
@@ -27,7 +25,6 @@ Record.makeKey = function(){
     localStorage[name+"Keys"] = JSON.stringify(keys);
   }
   
-  console.log("The key is: ", newKey);
   while(localStorage[name+newKey] !== undefined){
     newKey += 1;
   }
@@ -39,7 +36,6 @@ Record.addObject = function(newObject){
   var name = this.name, keys, newKey;
 
   newKey = this.makeKey();
-  console.log("nameKeys", localStorage[name + "Keys"]);
   keys = this.recordKeys();
 
   keys.push(newKey);
