@@ -31,7 +31,7 @@ var makeQuery = function(){
  * a callback for an `error`, which will be passed
  * as a parameter.
  */
-var errorCallback = function(err){
+var connectionCallback = function(err){
   if(err){
     console.error('Oops! Something happened with the connection to postgres: ', err);
     return undefined;
@@ -40,4 +40,4 @@ var errorCallback = function(err){
   
 };
 
-client.connect(errorCallback);
+client.connect(connectionCallback);
