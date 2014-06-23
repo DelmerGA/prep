@@ -2,7 +2,7 @@
 ## Getting Started
 
 
-To take this tour do the following do the following:
+To take this tour do the following:
 
 ```
 npm install -g express-generator
@@ -22,4 +22,4 @@ Options:
 
     supervisor -e 'html|js' node ./bin/www
 
-2. Make a controllers folder and for a `Users` resource and use that module with the `routes/users.js`
+2. Make a controllers folder for a `Users` resource and use that module with the `routes/users.js`
