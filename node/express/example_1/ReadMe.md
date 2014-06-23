@@ -15,3 +15,11 @@ express example_1
 ```
 
 then you're done.
+
+Options:
+
+1. Use `supervisor` to auto-reload file changes.
+
+    supervisor -e 'html|js' node ./bin/www
+
+2. Make a controllers folder and for a `Users` resource and use that module with the `routes/users.js`
